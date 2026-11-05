@@ -1,0 +1,314 @@
+<!--====STUDENT REGISTRATION FORM====-->
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        html {
+            background: #f5f2f2;
+        }
+
+        body {
+            max-width: 640px;
+            margin: 32px auto;
+            padding: 32px;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            color: #222;
+            background: #fff;
+            border-top: 6px solid #c31111;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #c31111;
+        }
+
+        br {
+            display: none;
+        }
+
+        /* ---------- Sections ---------- */
+        fieldset {
+            margin: 0 0 24px;
+            padding: 20px 20px 6px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+        }
+
+        legend {
+            padding: 0 10px;
+            font-weight: 600;
+            color: #c31111;
+        }
+
+        fieldset div {
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        fieldset label:first-child {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        /* labels that sit next to radios and checkboxes */
+        input[type="radio"] + label,
+        input[type="checkbox"] + label {
+            margin-right: 18px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        /* ---------- Inputs ---------- */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            font: inherit;
+            font-weight: 400;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #c31111;
+            box-shadow: 0 0 0 3px rgba(195, 17, 17, 0.15);
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            font: inherit;
+            font-weight: 400;
+            background: #fafafa;
+            border: 1px dashed #bbb;
+            border-radius: 8px;
+        }
+
+        input[type="file"]::file-selector-button {
+            margin-right: 12px;
+            padding: 6px 14px;
+            font: inherit;
+            color: #fff;
+            background: #c31111;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        input[type="file"]::file-selector-button:hover {
+            background: #9a0d0d;
+        }
+
+        input[type="color"] {
+            width: 56px;
+            height: 40px;
+            padding: 2px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: 17px;
+            height: 17px;
+            margin: 0 4px 0 0;
+            vertical-align: middle;
+            accent-color: #c31111;
+            cursor: pointer;
+        }
+
+        form > div {
+            margin-bottom: 24px;
+        }
+
+        /* ---------- Buttons ---------- */
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 11px 26px;
+            margin-right: 10px;
+            font: inherit;
+            font-weight: 600;
+            border: 2px solid #c31111;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        input[type="submit"] {
+            color: #fff;
+            background: #c31111;
+        }
+
+        input[type="submit"]:hover {
+            background: #9a0d0d;
+            border-color: #9a0d0d;
+        }
+
+        input[type="reset"] {
+            color: #c31111;
+            background: #fff;
+        }
+
+        input[type="reset"]:hover {
+            background: #fdeeee;
+        }
+
+        input[type="submit"]:active,
+        input[type="reset"]:active {
+            transform: scale(0.97);
+        }
+
+        /* ---------- Small screens ---------- */
+        @media (max-width: 480px) {
+            body {
+                margin: 0;
+                padding: 20px;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div>
+                Gender:
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="I'm GAE" name="gender" value="I'm GAE">
+                <label for="I'm GAE">I'm GAE</label>
+            </div>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <div>
+                <label for="studentid">Student ID:</label>
+                <input type="text" id="studentid" name="studentid">
+            </div>
+
+            <div>
+                <label for="major">Major:</label>
+                <select id="major" name="major">
+                    <option value="">Select Major</option>
+                    <option value="it">Information Technology</option>
+                    <option value="business">Business Administration</option>
+                    <option value="english">English Literature</option>
+                    <option value="engineering">Engineering</option>
+                </select>
+            </div>
+
+            <div>
+                Skills:
+                <input type="checkbox" id="html" name="skills" value="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skills" value="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="skills" value="javascript">
+                <label for="js">JavaScript</label>
+            </div>
+
+            <div>
+                <label for="photo">Upload Photo:</label><br>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <div>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="40"></textarea>
+            </div>
+
+            <div>
+                <label for="website">Personal Website:</label>
+                <input type="url" id="website" name="website">
+            </div>
+
+            <div>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color" value="#000000">
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the registration terms.</label>
+        </div>
+
+        <input type="submit" value="Register">
+                                    <a href="IDPolished.html" style="text-decoration: none; color: #fff; background: #c31111; padding: 10px 20px; border-radius: 8px;">View ID Card</a>
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+</body>
+</html>

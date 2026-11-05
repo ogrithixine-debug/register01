@@ -1,0 +1,162 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Identification Card</title>
+    <style>
+        html {
+            background: #f5f2f2;
+        }
+
+        body {
+            max-width: 520px;
+            margin: 32px auto;
+            padding: 32px 28px;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            color: #222;
+            text-align: center;
+            background: #fff;
+            border: 2px solid #c31111;
+            border-top-width: 8px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin: 0 0 6px;
+            font-size: 1.35rem;
+            letter-spacing: 0.5px;
+            color: #c31111;
+        }
+
+        h2 {
+            margin: 12px 0;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            color: #555;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto 10px;
+            padding: 3px;
+            border: 3px solid #c31111;
+            border-radius: 50%;
+            background: #fdeeee;
+        }
+
+        table {
+            width: 100%;
+            margin: 0 auto;
+            border: 1px solid #c31111;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #f20909;
+            padding: 10px 14px;
+        }
+
+        th {
+            width: 38%;
+            text-align: center;
+            color: #9a0d0d;
+            background: #fdeeee;
+        }
+
+        td {
+            text-align: left;
+            min-width: 140px;
+        }
+
+        tr:nth-child(even) td {
+            background: #fafafa;
+        }
+
+        h4 {
+            margin: 22px 0 24px;
+            color: #9a0d0d;
+        }
+
+        .signature {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                margin: 0;
+                padding: 24px 14px;
+                border-radius: 0;
+            }
+        }
+
+        @media print {
+            html {
+                background: #fff;
+            }
+            body {
+                margin: 0 auto;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>NATIONAL UNIVERSITY OF BATTAMBANG</h1>
+    <h2>STUDENT IDENTIFICATION CARD</h2>
+
+    <!-- Put your student photo in the same folder and name it student.png -->
+    <img src="IM_SO_SEXY.jpg" alt="Student Photo" width="90">
+
+    <h2>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            STUDENT CARD
+        </a>
+    </h2>
+
+    <table>
+        <tr>
+            <th>Student Name</th>
+            <td>Thy Sovannchanreth</td>
+        </tr>
+        <tr>
+            <th>Student ID</th>
+            <td>NUBB2026001</td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <th>Date of Birth</th>
+            <td>15 January 2005</td>
+        </tr>
+        <tr>
+            <th>Major</th>
+            <td>Information Technology</td>
+        </tr>
+        <tr>
+            <th>Academic Year</th>
+            <td>2026-2027</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>ogrithixine@gmail.com</td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td>069 879 642</td>
+        </tr>
+    </table>
+
+    <h4>Valid Academic Year: 2026-2027</h4>
+
+    <div class="signature">Student Signature: _______________</div>
+    <div class="signature">Authorized Signature: _______________</div>
+
+</body>
+</html>
